@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: purple;
+    color: white;
+    height: 65px;
+    font-size:27px ;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Montserrat', sans-serif;;
+
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+.gamecontainer{
+    background-color: rgb(139, 139, 133);
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.container{
+    margin-top: 100px;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+}
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(214, 190, 236);
+}
+
+.info{
+    font-size: 22px;
+}
+.gameinfo{
+    margin-top: 100px;
+    
+    padding: 0 34px;
+}
+
+.imgbox{
+    position: relative;
+    right: 300px;
+    top: 200px
+}
+
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;  
+      
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    
+    margin: 20px 23px  34px 40px;
+    padding: 11px 23px 11px 23px;
+    border-radius: 4px;
+    font-size: 15px;
+    
+}
+
+@media screen and(max-width: 800px)
+{
+    .gamecontainer{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
